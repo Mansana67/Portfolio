@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Saira', serif;
+    width: 100%;
+    height: auto;
+    color: white;
+    position: absolute;
+}
+
+
+#HOME{
+    position: absolute;
+    z-index: -5;
+}
+
+#img-upside-down{
+    position: absolute;
+    transform: rotate(180deg);
+    top: 52%;
+    z-index: -5;
+}
+
+
+
+/*HEADER*/
+    header{
+        background-color: black;
+        padding-top: .2em;
+        padding-bottom: .2em;
+        font-family: 'Saira', serif;
+        position: fixed;
+        width: 100%;
+        top: 0%;
+        z-index: 5;
+    }
+
+    header ul{
+        display: flex;
+        margin: 0;
+    }
+
+    header ul #home-weight{
+        font-weight: 900;
+    }
+
+    header ul #phone-num{
+        position: absolute;
+        right: 0;  
+    }
+
+    header ul li, a{
+        list-style: none;
+        margin: .5em;
+        text-decoration: none;
+        color: white;
+    }
+/*HEADER*/
+
+/*NAVIGATION*/
+    .nav-btn{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 3em;
+    }
+
+    .nav-btn .btn-space{
+        margin-top: 1em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btn-space button{
+        background: none;
+        border: none;
+        cursor: pointer;
+        border: solid white 2px;
+        color: white;
+        border-radius: 5px;
+        border: solid white 2px;
+        padding: .5em 1.5em;
+        margin-bottom: 1.5em;
+        letter-spacing: .2em;
+        font-weight: 900;
+        transition: all .5s ease;
+        transform: scale(0.8); /* Smaller size initially */
+        animation: fadeInScale 1s ease forwards; /* Trigger the animation on load */
+
+    }
+
+    @keyframes fadeInScale {
+        0% {
+            opacity: 0;
+            transform: scale(0.8);
+          }
+          100% {
+            opacity: 1;
+            transform: scale(1);
+          }
+    }
+
+    .btn-space button:hover{
+        background-color: white;
+        color: black;
+    }
+
+    .btn-space #btn-3D-anim{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+/*NAVIGATION*/
+
+/*ANIMATION*/
+    .anim-2D{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .anim-2D .roban-adala .heist-anim{
+        width: 30em;
+    }
+
+    .anim-2D .roban-adala h2{
+        text-align: center;
+    }
+
+    .anim-2D .roban-adala #vidRoba{
+        display: flex;
+        margin-inline: auto;
+        margin-bottom: 1.5em;
+    }
+
+    .anim-2D .roban-adala h2, .anim-2D .roban-adala h3{
+        margin: 0;
+        padding: 0;
+    }
+
+    .anim-2D .ad .ad-sum{
+        width: 30em;
+    }
+
+    .anim-2D .ad .ad-sum video{
+        display: flex;
+        margin-inline: auto;
+    }
+
+    .anim-2D .ad video{
+        margin-bottom: 1.5em;
+    }
+
+    .anim-2D .ad h2{
+        text-align: center;
+    }
+
+    .anim-2D .ad h2, .anim-2D .ad h3{
+        margin: 0;
+        padding: 0;
+    }
+
+    .anim-2D .heist-anim{
+        margin-bottom: .5em;
+    }
+
+    .anim-2D .ad .ad-sum{
+        margin-bottom: .5em;
+        
+    }
+
+    .anim-2D .ad #highlight{
+        font-weight: 600;
+    }
+
+    .anim-2D .roban-adala #highlight{
+        font-weight: 600;
+    }
+
+    .anim-3D{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .anim-3D .jodarak h2, .anim-3D .jodarak h3{
+        margin: 0;
+    }
+
+    .anim-3D .jodarak #highlight{
+        font-weight: 600;
+    }
+
+    .anim-3D .ad-sum{
+        width: 30em;
+        margin-bottom: .5em;
+    }
+
+    .anim-3D .jodarak h2{
+        text-align: center;
+    }
+
+   
+
+/*ANIMATION*/

@@ -1,0 +1,438 @@
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;700&display=swap');
+/*FONT*/
+html{
+    scroll-behavior: smooth;
+}
+/*BODY*/
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    .img-landing-page{
+        position: absolute;
+        top: 5%;
+        z-index: -5;
+        width: 1263px;
+        height: 700px;
+    }
+    
+    #img-about-section{
+        position: absolute;
+        z-index: -5;
+        width: 1263px;
+        height: 700px;
+    }
+
+    #img-resume{
+        position: absolute;
+        z-index: -5;
+        width: 1263px;
+        height: 600px;
+    }
+/*BODY*/
+
+/*HEADER*/
+    header{
+        background-color: black;
+        padding-top: .2em;
+        padding-bottom: .2em;
+        font-family: 'Saira', serif;
+        position: fixed;
+        width: 100%;
+        top: 0%;
+    }
+
+    header ul{
+        display: flex;
+        margin: 0;
+    }
+
+    header ul #home-weight{
+        font-weight: 900;
+    }
+
+    header ul #phone-num{
+        position: absolute;
+        right: 0;  
+    }
+
+    header ul li, a{
+        list-style: none;
+        margin: .5em;
+        text-decoration: none;
+        color: white;
+    }
+
+/*HEADER*/
+
+/*NAME*/
+    .container-name{
+        width: fit-content;
+        margin-left: 10em;
+        padding: 0;
+        margin-top: -24em;
+        margin-bottom: 15em;
+        
+    }
+
+    .name{
+        color: white;
+        animation: fadeIn 1s ease forwards;
+        opacity: 0;
+    }
+     @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }    
+     }
+     
+    .name li{
+        list-style: none;
+        margin: 0;
+        
+    }
+
+    .name #weight-normal{
+        font-family: 'Saira', serif;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: .7em;
+
+    }
+
+    .name #weight-bold{
+        font-family: 'Saira', serif;
+        font-weight: 900;
+        font-size: 2.5rem;
+        line-height: .9em;
+    }
+
+    .name #weight-light{
+        font-family: 'Saira', serif;
+        font-weight: 200;
+        font-size: 1rem;
+        letter-spacing: .2em;
+        line-height: .9em;
+    }
+
+    .btn-home-page{
+        margin-top: 1.5em;
+        font-family: 'Saira', serif;
+        font-weight: 400;
+       
+    }
+
+    .btn-home-page button{
+        padding: .5em 1.5em;
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: all .5s ease;
+    }
+
+    .btn-home-page #btn-resume{
+        margin-right: 2em;
+    }
+
+    .btn-home-page #btn-resume, #btn-portfolio{
+        border: solid white 2px;
+        border-radius: 5px;
+        letter-spacing: .1em;
+    }
+
+    .btn-home-page button:hover{
+        transform: translateY(-5px);
+    }
+
+/*NAME*/
+
+/*ABOUT*/
+    .container-about{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Saira', serif;
+        margin-bottom: -1em;
+    }
+
+    .container-about .about p{
+        width: 30em;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.3rem;
+        margin-top: 2.5em;
+        padding: 1em;
+        border-radius: 3px;
+    }
+
+    .container-about .about{
+        margin-left: 5em;
+        margin-top: 3em;
+    }
+
+    .container-about .about h1{
+        margin: 0;
+    }
+
+    .container-about .place{
+        margin-left: 8em;
+        margin-bottom: 4em;
+    }
+
+    .container-about h2{
+        margin: 0;
+        margin-left: 5.2em;
+    }
+
+    .container-contact{
+        display: flex;
+        margin-left: 7.3em;
+    }
+/*ABOUT*/
+
+/*RESUME*/
+.container-resume{
+    margin-top: 1.5em;
+}
+
+.container-resume .container-column{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.container-column .container-experience{
+    font-family: 'Saira', serif;
+    margin-left: 6em;
+    margin-right: 6em;
+}
+
+/*HIGH SCHOOL*/
+    .high-school{
+        display: flex;
+        margin-bottom: .8em;
+    }
+
+    .high-school .high-school-title{
+        margin-left: 2em;
+    }
+
+    .high-school .high-school-title h3,.high-school .high-school-title p {
+        margin: 0;
+        padding: 0;
+
+    } 
+    .high-school .square{
+        background-color: rgb(31, 138, 219);
+        width:3em;
+        height: 3em;
+        border-radius: 3px;
+        margin-top: .2em;
+    }
+
+    .high-school .square span{
+        position: relative;
+        top: 23%;
+        left: 10%;
+    }
+/*HIGH SCHOOL*/
+.white-bar{
+        background-color: white;
+        width: .2em;
+        height: 2.5em;
+        margin-left: 1.4em;
+    }
+
+/*BACHELOR DEGREE*/
+    .bachelor-dg{
+        display: flex;
+    }
+
+    .bachelor-dg .square{
+        background-color: rgb(31, 138, 219);
+        width:3em;
+        height: 3em;
+        border-radius: 3px;
+        margin-top: 1em;   
+    }
+
+    .bachelor-dg .square span{
+        position: relative;
+        top: 23%;
+        left: 8%;
+    }
+
+    .bachelor-dg .bachelor-title{
+        margin-left: 2em;
+    }
+
+    .bachelor-dg .bachelor-title h3, .bachelor-dg .bachelor-title p{
+        padding: 0;
+        margin: 0;
+    }
+
+/*BACHELOR DEGREE*/
+/*MASTER DEGREE*/
+    .master-degree{
+        display: flex;
+    }
+
+    .master-degree .square{
+        background-color: rgb(31, 138, 219);
+        width:3em;
+        height: 3em;
+        border-radius: 3px;
+        margin-top: 1em;
+    }
+
+    .master-degree .square span{
+        position: relative;
+        top: 23%;
+        left: 8%;
+    }
+
+    .master-degree .master-title{
+        margin-left: 2em;
+        margin-top: .8em;
+    }
+
+    .master-degree .master-title h3, .master-degree .master-title p{
+        margin: 0;
+        padding: 0;
+    }
+
+/*EXPERIENCE*/
+    .experience{
+        margin-top: 2.4em;
+    }
+
+    .container-experience .experience .ptit-loup{
+        display: flex;
+    }
+
+    .container-experience .experience .ptit-loup h3, .container-experience .experience .ptit-loup p{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-experience .experience .ptit-loup .exp-web{
+        margin-left: 2em;
+        margin-top: .8em;
+    }
+
+    .ptit-loup .square{
+        background-color: rgb(31, 138, 219);
+        width:3em;
+        height: 3em;
+        border-radius: 3px;
+        margin-top: 1em;
+    }
+
+    .ptit-loup .square span{
+        position: relative;
+        top: 23%;
+        left: 8%;
+    }
+
+
+
+/*SOFTWARE SKILLS*/
+    .container-resume .container-column .container-software .software-skills{
+        font-family: 'Saira', serif;
+    
+    }
+
+    .software-skills ul{
+        list-style: none;
+        margin: 0;
+        padding:  0em 1em;
+    }
+
+    .software-skills h4{
+        margin: 0;
+        padding: 0;
+    }
+
+    .language{
+        font-family: 'Saira', serif;
+        margin-bottom: .5em;
+    }
+
+    .language h2{
+        margin: 0;
+    }
+
+    .language ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+/*PERSONAL SKILLS*/ 
+    .skills{
+        font-family: 'Saira', serif;
+    }
+
+    .skills h2{
+        margin: 0;
+    }
+
+    .skills ul{
+        margin: 0;
+        list-style: none;
+        padding: 0;
+    }
+
+/*CREATION*/
+    .container-creation{
+        font-family: 'Saira', serif;
+    }
+
+/*WHAT CAN I DO SECTION*/
+.container-creation{
+
+}
+
+.container-creation .container-hobbies .reading-drawing {
+    margin-bottom: 1em;
+}
+    .container-creation .container-hobbies .reading-drawing span{
+        padding: .5em;
+        margin: .5em;
+    }  
+    
+    .container-creation .container-hobbies .reading-drawing .fa-book{
+        padding-right: .5em;
+    }
+
+    .container-creation .container-hobbies .reading-drawing .fa-pencil{
+        padding-right: .5em;
+    }
+
+    .container-creation .container-hobbies .gaming-3D span{
+        padding: .5em;
+        margin: .5em;
+    }
+
+    .container-creation .container-hobbies .gaming-3D .fa-gamepad{
+        padding-right: .5em;
+    }
+
+    .container-creation .container-hobbies .gaming-3D .fa-paintbrush{
+        padding-right: .5em;
+    }
+
+    
+
+
+
+/*RESUME*/

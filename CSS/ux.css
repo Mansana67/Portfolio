@@ -1,0 +1,12 @@
+.active{
+    border-bottom: 2px rgb(255, 255, 255) solid;
+    display: inline;
+    width: auto;
+
+}
+
+.activeNav{
+    background-color: aliceblue;
+    transform: translateY(-5px);
+    color: black;
+}
