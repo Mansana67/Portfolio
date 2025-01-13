@@ -1,3 +1,15 @@
 @media (max-width: 576px) {
-    
+        #HOME, #img-about-section, #img-resume{
+        width: 200%;
+    }
+
+    #HOME{
+        position: relative;
+        z-index: -5;
+        left: -50%;
+    }
+
+    .container-name{
+        margin-left: 5em;
+    }
 }
