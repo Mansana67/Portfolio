@@ -1,6 +1,12 @@
 @media (max-width: 576px) {
-        #HOME, #img-about-section, #img-resume{
+    body{
+        overflow-x: hidden;
+    }
+
+
+    #HOME, #img-about-section, #img-resume{
         width: 200%;
+        
     }
 
     #HOME{
@@ -9,7 +15,88 @@
         left: -50%;
     }
 
+    #img-resume{
+        height: 150%;
+    }
+
     .container-name{
         margin-left: 5em;
     }
+
+    .container-resume .container-column {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    /*ABOUT*/
+
+    .container-about .about{
+        margin: 0;
+    }
+
+    .container-about .about p{
+        font-size: 1rem;
+        width: 20em;
+    }
+
+    /*SKILLS*/
+
+
+    .container-software{
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        
+    }
+
+    .showdiv{
+        height: fit-content;
+        overflow-y: visible;  
+    }
+
+    .hiddendiv{
+        height: 4em;
+        overflow-y: hidden;
+       
+    }
+
+    .container-software .software-skills,.container-software .language, .container-software .skills {
+        position: relative;
+        z-index: 3;
+        top: 0;
+        margin-right: auto;
+        margin-left: auto; 
+        text-align: center;
+
+    }
+
+    .container-software .software-skills h2{
+        text-align: center;
+        cursor: pointer;
+        border: white 2px solid;
+        margin-right: auto;
+        margin-left: auto;
+        width: max-content;
+        padding: 0 .5em;
+        border-radius: 5px;
+        transition: all .5s ease;
+    }
+
+    .container-software .software-skills h2:hover{
+        transform: translateY(-5px);
+    }
+
+    .container-experience{
+        height: 3em;
+        overflow-y: hidden;
+        text-align: center;
+    }
+
+    .container-creation{
+        height: 3em;
+        overflow-y: hidden;
+        text-align: center;
+    }
+
 }
