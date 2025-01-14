@@ -35,7 +35,6 @@ let isRevealed = false;
 
 function toggleContent(){
   const content = document.getElementById('content');
-  const contents = document.getElementById('soft');
   if (isRevealed) {
     // Hide content
     content.classList.remove('showdiv');
