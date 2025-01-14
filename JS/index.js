@@ -30,7 +30,24 @@ btnNav.forEach(button => {
   });
 });
 
-/*2D and 3D CONTENT*/
+/*REVEAL CONTENT*/
+let isRevealed = false;
+
+function toggleContent(){
+  const content = document.getElementById('content');
+  const contents = document.getElementById('soft');
+  if (isRevealed) {
+    // Hide content
+    content.classList.remove('showdiv');
+    content.classList.add('hiddendiv');
+    isRevealed = false;
+    } else {
+        // Show content on top
+        content.classList.remove('hiddendiv');
+        content.classList.add('showdiv');
+        isRevealed = true;
+    }
+}
 
 
 
