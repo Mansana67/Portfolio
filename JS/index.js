@@ -31,23 +31,54 @@ btnNav.forEach(button => {
 });
 
 /*REVEAL CONTENT*/
-let isRevealed = false;
 
-function toggleContent(){
-  const content = document.getElementById('content');
-  if (isRevealed) {
-    // Hide content
-    content.classList.remove('showdiv');
-    content.classList.add('hiddendiv');
-    isRevealed = false;
-    } else {
-        // Show content on top
-        content.classList.remove('hiddendiv');
-        content.classList.add('showdiv');
-        isRevealed = true;
-    }
-}
+/*Software skills, languages and skills*/
+  let isRevealed = false;
 
+  function toggleContent(){
+    const content = document.getElementById('contentSkills');
+    if (isRevealed) {
+      // Hide content
+      content.classList.remove('showSkills');
+      content.classList.add('contentSkills');
+      isRevealed = false;
+      } else {
+          // Show content on top
+          content.classList.remove('contentSkills');
+          content.classList.add('showSkills');
+          isRevealed = true;
+      }
+  }
 
+/*EDUCATION*/
+  function toggleContentEdu(){
+    const content = document.getElementById('content-edu');
+    if (isRevealed) {
+      // Hide content
+      content.classList.remove('showEdu');
+      content.classList.add('content-edu');
+      isRevealed = false;
+      } else {
+          // Show content on top
+          content.classList.remove('content-edu');
+          content.classList.add('showEdu');
+          isRevealed = true;
+      }
+  }
 
+  /*WHAT CAN I DO*/
+  function toggleContentWhatCanIdo(){
+    const content = document.getElementById('content-do');
+    if (isRevealed) {
+      // Hide content
+      content.classList.remove('showDo');
+      content.classList.add('content-do');
+      isRevealed = false;
+      } else {
+          // Show content on top
+          content.classList.remove('content-do');
+          content.classList.add('showDo');
+          isRevealed = true;
+      }
+  }
 
