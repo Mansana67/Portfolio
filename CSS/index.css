@@ -8,6 +8,7 @@ html{
     body{
         margin: 0;
         padding: 0;
+        height: auto;
     }
 
     .img-landing-page{
@@ -22,14 +23,15 @@ html{
         position: absolute;
         z-index: -5;
         width: 1263px;
-        height: 700px;
+        height: 650px;
     }
 
-    #img-resume{
+    #Resume{
         position: absolute;
         z-index: -5;
         width: 1263px;
-        height: 600px;
+        height: auto;
+        margin-top: -1em;
     }
 /*BODY*/
 
@@ -42,7 +44,7 @@ html{
         position: fixed;
         width: 100%;
         top: 0%;
-        z-index : 5;
+        z-index: 5;
     }
 
     header ul{
@@ -184,7 +186,7 @@ html{
 
     .container-about .place{
         margin-left: 8em;
-        margin-bottom: 4em;
+        margin-bottom: 5em;
     }
 
     .container-about h2{
