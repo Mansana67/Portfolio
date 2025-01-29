@@ -1,4 +1,4 @@
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
     body{
         overflow-x: hidden;
     }
@@ -15,8 +15,9 @@
         left: -50%;
     }
 
-    #img-resume{
+    #Resume{
         height: 150%;
+        margin-top: -3em;
     }
 
     .container-name{
@@ -32,17 +33,23 @@
     /*ABOUT*/
 
     .container-about .about{
-        margin: 0;
+        margin-top: 3em;
+    }
+
+    .container-about {
+        margin-bottom: 1em;
     }
 
     .container-about .about p{
         font-size: 1rem;
-        width: 20em;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        height: 17em;
+    
     }
 
     /*SKILLS*/
-
-
     .container-software{
         margin-left: auto;
         margin-right: auto;
@@ -50,16 +57,16 @@
         
     }
 
-    .showdiv{
-        height: fit-content;
-        overflow-y: visible;  
+    .container-software .software-skills .contentSkills{
+        height: 0;
+        overflow-y: hidden;
     }
 
-    .hiddendiv{
-        height: 4em;
-        overflow-y: hidden;
-       
+    .showSkills{
+        height: auto;
+        overflow-y: visible;
     }
+    
 
     .container-software .software-skills,.container-software .language, .container-software .skills {
         position: relative;
@@ -71,7 +78,38 @@
 
     }
 
-    .container-software .software-skills h2{
+    .container-software .software-skills #activebtn-skills{
+        text-align: center;
+        cursor: pointer;
+        border: white 2px solid;
+        margin-right: auto;
+        margin-left: auto;
+        width: max-content;
+        padding: 0 .5em;
+        border-radius: 5px;
+        transition: all .5s ease;
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+
+    
+
+
+
+    .container-software .software-skills #activebtn-skills:hover{
+        transform: translateY(-5px);
+    }
+
+    .container-software .software-skills .contentSkills .language h2{
+        all: unset;
+    }
+
+    /*EDUCATION*/
+
+    .container-resume{
+
+    }
+    .container-experience .education #activebtn-edu{
         text-align: center;
         cursor: pointer;
         border: white 2px solid;
@@ -83,20 +121,64 @@
         transition: all .5s ease;
     }
 
-    .container-software .software-skills h2:hover{
+    .container-experience .education #activebtn-edu:hover{
         transform: translateY(-5px);
     }
 
-    .container-experience{
-        height: 3em;
+    .container-experience .education .content-edu{
         overflow-y: hidden;
-        text-align: center;
+        height: 0;
     }
 
+    .showEdu{
+        overflow-y: visible;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+    }
+
+ 
+
+    /*CREATION*/
     .container-creation{
-        height: 3em;
-        overflow-y: hidden;
-        text-align: center;
+        margin: 0;
     }
 
+    .container-creation .creation #activebtn-creation{
+        text-align: center;
+        cursor: pointer;
+        border: white 2px solid;
+        margin-right: auto;
+        margin-left: auto;
+        width: max-content;
+        padding: 0 .5em;
+        border-radius: 5px;
+        transition: all .5s ease;
+    }
+    .container-creation .creation .container-hobbies h2{
+        border: white 2px solid;
+        margin-right: auto;
+        margin-left: auto;
+        width: max-content;
+        padding: 0 .5em;
+        border-radius: 5px;
+
+    }
+
+    .container-creation .creation #activebtn-creation:hover{
+        transform: translateY(-5px);
+    }
+
+    .container-creation .creation .content-do{
+        text-align: center;
+        height: 0;
+        overflow-y: hidden;
+    }
+
+    .showDo{
+        text-align: center;
+        height: auto;
+        overflow-y: visible;
+    }
 }
