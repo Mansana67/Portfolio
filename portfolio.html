@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- STYLESHEESH -->
+    <link rel="stylesheet" href="CSS/portfolio.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSideBar()><a href=""><i class="fa fa-window-close fa-2x" aria-hidden="true"></i></a></li>
+                <li class="mobile-anim"><a href="index.html">Home</a></li>
+                <li class="mobile-anim active"><a href="#portfolio">Portfolio</a></li>
+
+            </ul>
+            <ul>
+                <li><a href="#">JodaRak</a></li>
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile active"><a href="#portfolio">Portfolio</a></li>
+                <li class="menu-btn" onclick=showSideBar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--CONTENT-->
+    <div class="main-div">
+        <div class="nav-btn">
+            <button class="btnNav activeNav" id="btn-3D-anim" >Animation</button>
+                <a href="Ptits-loup/index.html">
+                    <button class="btnNav" id="btn-website"> Ptits Loups(Ongoing Project)
+                    </button>
+                </a>
+        </div> 
+        <div class="content-div">
+            <div class="anim-2D">
+                <div class="roban-adala">
+                    <h2>Roban'Adala</h2>
+                    <h3>Summary</h3>
+                    <div class="heist-anim">
+                        <span>"Roban'adala" or crazy heist is a 2D short animation centered around four characters : Collette the driver, Doda the macho, Rainboto the dumb, and Vazo the singer. Together, they help each other to rob a bank despite their lack of skills.</span>
+                    </div>
+                    <span id="highlight">Animation Link : <a href="https://youtu.be/GfBKd3JIm1U" target="_blank">https://youtu.be/GfBKd3JIm1U</a></span>
+                </div>
+                <div class="ad">
+                    <h2>Popotes Store</h2>
+                    <h3>Summary</h3>
+                    <div class="ad-sum">
+                        <span>"Popotes Store", a combined 3D and 2D animation, is an advertisement to promote the website Popotes Store to help people during the pandemic to buy their needs online.</span>
+                    </div>
+                    <span id="highlight">Animation Link : <a href="https://youtu.be/6eL8yZsnBbU" target="_blank">https://youtu.be/6eL8yZsnBbU</a></span>
+                </div>
+            </div> 
+            <div class="anim-3D">
+                <div class="jodarak">
+                    <h2>Jodarak</h2>
+                    <h3>Summary</h3>
+                    <div class="ad-sum">
+                        <span>JodaRak is a 3D animation crafted to showcase the transformation of car design from 2D sketches to intricate 3D modeling, finishing with a short animation as an advertisement for the design.</span>
+                    </div>        
+                    <span id="highlight">Animation Link : <a href="https://youtu.be/E2IrIb7E78U" target="_blank">https://youtu.be/E2IrIb7E78U</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/index.js"></script>
+</body>
+</html>
