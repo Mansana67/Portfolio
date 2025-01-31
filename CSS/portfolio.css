@@ -12,7 +12,7 @@ html{
 
 body{
     min-height: 100vh;
-    background-image: url('/IMG/portfoliobackground.png') !important;
+    background-image: url('../IMG/portfoliobackground.png') !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
