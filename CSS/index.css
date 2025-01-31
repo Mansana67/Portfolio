@@ -1,86 +1,110 @@
-/*FONT*/
 @import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;700&display=swap');
-/*FONT*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Saira', serif;
+    color: white;
+}
+
 html{
     scroll-behavior: smooth;
 }
-/*BODY*/
-    body{
-        margin: 0;
-        padding: 0;
-        height: auto;
-    }
 
-    .img-landing-page{
-        position: absolute;
-        top: 5%;
-        z-index: -5;
-        width: 1263px;
-        height: 700px;
-    }
-    
-    #img-about-section{
-        position: absolute;
-        z-index: -5;
-        width: 1263px;
-        height: 650px;
-    }
-
-    #Resume{
-        position: absolute;
-        z-index: -5;
-        width: 1263px;
-        height: auto;
-        margin-top: -1em;
-    }
-/*BODY*/
-
-/*HEADER*/
-    header{
+body{
+    min-height: 100vh;
+}
+/*NAVBAR*/
+    nav{
         background-color: black;
-        padding-top: .2em;
-        padding-bottom: .2em;
-        font-family: 'Saira', serif;
         position: fixed;
         width: 100%;
-        top: 0%;
-        z-index: 5;
+        z-index: 999;
+        top: 0;
     }
 
-    header ul{
+    nav ul{
         display: flex;
-        margin: 0;
-    }
-
-    header ul #home-weight{
-        font-weight: 900;
-    }
-
-    header ul #phone-num{
-        position: absolute;
-        right: 0;  
-    }
-
-    header ul li, a{
+        justify-content: flex-end;
         list-style: none;
-        margin: .5em;
+        align-items: center;
+    }
+
+    nav ul li{
+        height: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    nav #logo{
+        padding-left: 1em;
+    }
+
+    nav ul li a{
         text-decoration: none;
-        color: white;
+        padding: 0em 1em;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transition: .5s all ease;
     }
 
-/*HEADER*/
-
-/*NAME*/
-    .container-name{
-        width: fit-content;
-        margin-left: 10em;
-        padding: 0;
-        margin-top: -24em;
-        margin-bottom: 15em;
-        
+    nav ul li a:hover{
+        background-color: rgb(77, 77, 77);  
     }
 
-    .name{
+    nav li:first-child{
+        margin-right: auto;
+    }
+
+    .sidebar{
+        position: fixed;
+        top: 0;
+        right: 0; 
+        height: 100vh;
+        width: 250px;
+        z-index: 999;
+        background-color: rgba(0, 0, 0, 0.468);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        backdrop-filter: blur(5px);
+    }
+
+    .sidebar li{
+        width: 100%;
+    }
+
+    .sidebar li a{
+        width: 100%;
+    }
+
+    .menu-btn{
+        display: none;
+    }
+
+    .active{
+        background-color: rgb(77, 77, 77);  
+    }
+    
+/*HERO SECTION*/
+    .hero{
+        width: 100%;
+        height: 100vh;
+        background-image: url('/IMG/Hero-image.png')!important;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+     .section .content{
+        max-width: 90%;
+        font-size: .5rem; 
+        padding-top: 30em;
+        padding-left: 15em;
+    }
+
+    .section .content .name{
         color: white;
         animation: fadeIn 1s ease forwards;
         opacity: 0;
@@ -105,7 +129,7 @@ html{
     .name #weight-normal{
         font-family: 'Saira', serif;
         font-weight: 400;
-        font-size: 2rem;
+        font-size: 3rem;
         line-height: .7em;
 
     }
@@ -115,6 +139,7 @@ html{
         font-weight: 900;
         font-size: 2.5rem;
         line-height: .9em;
+        font-size: 3rem;
     }
 
     .name #weight-light{
@@ -138,6 +163,11 @@ html{
         border: none;
         cursor: pointer;
         transition: all .5s ease;
+        
+    }
+
+    .btn-home-page button a{
+        text-decoration: none;
     }
 
     .btn-home-page #btn-resume{
@@ -152,74 +182,115 @@ html{
 
     .btn-home-page button:hover{
         transform: translateY(-5px);
+        color: black !important;
     }
 
-/*NAME*/
 
-/*ABOUT*/
-    .container-about{
-        color: white;
-        display: flex;
-        flex-direction: column;
-        font-family: 'Saira', serif;
-        margin-bottom: -1em;
+/*ABOUT SECTION*/
+    .about{
+        width: 100%;
+        height: 100vh;
+        background-image: url('/IMG/Img-about.png')!important;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
-    .container-about .about p{
-        width: 30em;
+    .section .content-about .about{
+        padding-top: 3em;
+    }
+
+    .about h1{
+        padding: 0;
+        margin: 0;
+        margin-left: 2em;
+    }
+
+    .about span{
+        margin-left: 4em;
+    }
+
+    .about p{
+        margin-top: 5em;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
-        font-size: 1.3rem;
-        margin-top: 2.5em;
-        padding: 1em;
-        border-radius: 3px;
     }
 
-    .container-about .about{
-        margin-left: 5em;
-        margin-top: 3em;
-    }
-
-    .container-about .about h1{
-        margin: 0;
-    }
-
-    .container-about .place{
-        margin-left: 8em;
-        margin-bottom: 5em;
-    }
-
-    .container-about h2{
-        margin: 0;
-        margin-left: 5.2em;
-    }
-
-    .container-contact{
+    .about .contact{
         display: flex;
-        margin-left: 7.3em;
+        margin-top: 5em;
+        justify-content: center;
+        gap: 1em;
     }
-/*ABOUT*/
 
-/*RESUME*/
-.container-resume{
-    margin-top: 1.5em;
-}
+    .about .contact .whatsapp a{
+        text-decoration: none;
+        align-items: center;
+    }
 
-.container-resume .container-column{
-    display: flex;
-    justify-content: center;
-    color: white;
-    margin-left: auto;
-    margin-right: auto;    
-}
 
-.container-column .container-experience{
-    font-family: 'Saira', serif;
-    margin-left: 6em;
-    margin-right: 6em;
-}
 
-/*HIGH SCHOOL*/
+    .about .contact .whatsapp span{
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .about .location{
+        text-align: center;
+        margin-top: .5em;
+    }
+
+    .about .location span{
+        margin: 0;
+
+    }
+
+/*RESUME SECTION*/   
+    .resume{
+        width: 100%;
+        height: 100vh;
+        background-image: url('/IMG/Img-resume.jpg')!important;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .content-resume{
+        padding-top: 5em;
+        padding-right: .5em;
+        padding-left: .5em;
+        display: flex;
+        gap: 5em;
+        justify-content: center;
+    }
+
+    .software-skills ul{
+        list-style: none;
+        margin: 0;
+        padding:  0em 1em;
+    }
+
+    .software-skills h4{
+        margin: 0;
+        padding: 0;
+    }
+
+    .language{
+        font-family: 'Saira', serif;
+        margin-bottom: .5em;
+    }
+
+    .language h2{
+        margin: 0;
+    }
+
+    .language ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
     .high-school{
         display: flex;
         margin-bottom: .8em;
@@ -347,39 +418,6 @@ html{
     }
 
 
-
-/*SOFTWARE SKILLS*/
-    .container-resume .container-column .container-software .software-skills{
-        font-family: 'Saira', serif;
-    
-    }
-
-    .software-skills ul{
-        list-style: none;
-        margin: 0;
-        padding:  0em 1em;
-    }
-
-    .software-skills h4{
-        margin: 0;
-        padding: 0;
-    }
-
-    .language{
-        font-family: 'Saira', serif;
-        margin-bottom: .5em;
-    }
-
-    .language h2{
-        margin: 0;
-    }
-
-    .language ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
 /*PERSONAL SKILLS*/ 
     .skills{
         font-family: 'Saira', serif;
@@ -401,13 +439,11 @@ html{
     }
 
 /*WHAT CAN I DO SECTION*/
-.container-creation{
 
-}
+    .container-creation .container-hobbies .reading-drawing {
+        margin-bottom: 1em;
+    }
 
-.container-creation .container-hobbies .reading-drawing {
-    margin-bottom: 1em;
-}
     .container-creation .container-hobbies .reading-drawing span{
         padding: .5em;
         margin: .5em;
@@ -434,8 +470,4 @@ html{
         padding-right: .5em;
     }
 
-    
 
-
-
-/*RESUME*/
