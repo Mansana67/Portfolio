@@ -1,184 +1,193 @@
-@media (max-width: 1024px) {
-    body{
-        overflow-x: hidden;
+@media (max-width:500px){
+    .hideOnMobile{
+        display: none !important;
+        font-size: 1rem;
+    }
+    .main-div{
+        padding: 0em 2em;
+        padding-bottom: 2em;
+    }
+    
+    .main-div .content-div{
+        width: 100%;
     }
 
-
-    #HOME, #img-about-section, #img-resume{
-        width: 200%;
-        
+    .menu-btn{
+        display: block;
     }
 
-    #HOME{
-        position: relative;
-        z-index: -5;
-        left: -50%;
+    /*BUTTON PORTFOLIO*/
+    .main-div .nav-btn button{
+        padding: .5em;
     }
 
-    #Resume{
-        height: 150%;
-        margin-top: -3em;
+    /*HERO SECTION*/
+    .section .content{
+        font-size: .5rem; 
+        padding-top: 5em;
+        padding-left: 2em;
+
     }
 
-    .container-name{
-        margin-left: 5em;
+    .name #weight-normal{
+        font-size: 2rem; 
     }
 
-    .container-resume .container-column {
-        display: flex;
-        flex-direction: column;
+    .name #weight-bold{
+        font-size: 2rem; 
+    }
 
+    .name #weight-light{
+        font-size: .9rem; 
+    }
+
+    .hero{
+        height: 100vh;
     }
 
     /*ABOUT*/
-
-    .container-about .about{
-        margin-top: 3em;
+    .about{
+        height: 100vh;
     }
 
-    .container-about {
+    .about .contact{
+        margin-top: 2em;
+    }
+
+    .about .location{
+        padding-bottom: 3em;
+    }
+
+    /*RESUME*/
+    .resume{
+        height: 100vh;
+    }
+}
+
+@media (max-width:768px){
+  /*HERO SECTION*/
+    .section .content{
+        max-width: 90%;  
+        padding-top: 35em;
+        padding-left: 2em;
+    }
+
+    .about{
+        height: auto;
+    }
+}
+
+@media (min-width:1200px){
+    .about p{
+        width: 50%;
+    }
+
+    .about{
+        height: 100vh;
+    }
+}
+
+@media(max-width:1024px){
+    .resume{
+        min-height:100vh;
+        overflow: auto;
+    }
+
+    .content-resume{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10em;
+        gap: 3em;
+    }
+
+    .content-resume .contianer-experience{
+        padding-top: -2em;
+    }
+
+    .content-resume .software-skills {
+        text-align: center;
+    }
+
+    .content-resume .software-skills .language h2{
+        border: unset;
+        cursor: unset;
+    }
+
+    .content-resume .software-skills .skills h2{
+        border: unset;
+        cursor: unset;
+    }
+
+
+
+     /*WHAT CAN I DO*/
+     .content-resume .container-creation .creation {
+        text-align: center;
+    }
+
+    .content-resume .container-creation .creation .content-do{
+        height: 0;
+        overflow-y: hidden;
+    }
+
+     /*HIDE-SHOW CONTENT*/
+     .content-resume .software-skills .contentSkills{
+        height: 0;
+        overflow-y: hidden;
+        opacity: 0;  
+    }
+
+    .content-resume .software-skills #activebtn-skills{
+        cursor: pointer;
+        border: white 2px solid;
+        border-radius: 5px;
+        margin-bottom: 1em;
+
+    }
+    .content-resume .container-experience .education h2{
+        text-align: center;
+    }
+
+    .content-resume .container-experience .education #activebtn-edu{
+        text-align: center;
+        cursor: pointer;
+        border: white 2px solid;
+        margin-right: auto;
+        margin-left: auto;
+        width: 270px;
+        border-radius: 5px;
         margin-bottom: 1em;
     }
 
-    .container-about .about p{
-        font-size: 1rem;
-        margin-left: auto;
-        margin-right: auto;
-        width: auto;
-        height: 17em;
+    .content-resume .container-experience .experience h2{
+        border: unset;
+        cursor: unset;
+    }
+       .creation .content-do .container-hobbies h2{
+        border: unset;
+        cursor: unset;
+    }
+
+
+    .content-resume .container-creation .creation #activebtn-creation{
+        text-align: center;
+        cursor: pointer;
+        border: white 2px solid;
+        width: 270px;
+        border-radius: 5px;
+        margin-bottom: 1em;
     
     }
 
-    /*SKILLS*/
-    .container-software{
-        margin-left: auto;
-        margin-right: auto;
-        width: fit-content;
-        
-    }
-
-    .container-software .software-skills .contentSkills{
+    .content-resume .container-experience .education .content-edu{
         height: 0;
         overflow-y: hidden;
     }
 
-    .showSkills{
-        height: auto;
-        overflow-y: visible;
-    }
-    
 
-    .container-software .software-skills,.container-software .language, .container-software .skills {
-        position: relative;
-        z-index: 3;
-        top: 0;
-        margin-right: auto;
-        margin-left: auto; 
-        text-align: center;
-
-    }
-
-    .container-software .software-skills #activebtn-skills{
-        text-align: center;
-        cursor: pointer;
-        border: white 2px solid;
-        margin-right: auto;
-        margin-left: auto;
-        width: max-content;
-        padding: 0 .5em;
-        border-radius: 5px;
-        transition: all .5s ease;
-        margin-top: .5em;
-        margin-bottom: .5em;
-    }
-
-    
-
-
-
-    .container-software .software-skills #activebtn-skills:hover{
-        transform: translateY(-5px);
-    }
-
-    .container-software .software-skills .contentSkills .language h2{
-        all: unset;
-    }
-
-    /*EDUCATION*/
-
-    .container-resume{
-
-    }
-    .container-experience .education #activebtn-edu{
-        text-align: center;
-        cursor: pointer;
-        border: white 2px solid;
-        margin-right: auto;
-        margin-left: auto;
-        width: max-content;
-        padding: 0 .5em;
-        border-radius: 5px;
-        transition: all .5s ease;
-    }
-
-    .container-experience .education #activebtn-edu:hover{
-        transform: translateY(-5px);
-    }
-
-    .container-experience .education .content-edu{
-        overflow-y: hidden;
-        height: 0;
-    }
-
-    .showEdu{
-        overflow-y: visible;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        width: fit-content;
-    }
-
- 
-
-    /*CREATION*/
-    .container-creation{
-        margin: 0;
-    }
-
-    .container-creation .creation #activebtn-creation{
-        text-align: center;
-        cursor: pointer;
-        border: white 2px solid;
-        margin-right: auto;
-        margin-left: auto;
-        width: max-content;
-        padding: 0 .5em;
-        border-radius: 5px;
-        transition: all .5s ease;
-    }
-    .container-creation .creation .container-hobbies h2{
-        border: white 2px solid;
-        margin-right: auto;
-        margin-left: auto;
-        width: max-content;
-        padding: 0 .5em;
-        border-radius: 5px;
-
-    }
-
-    .container-creation .creation #activebtn-creation:hover{
-        transform: translateY(-5px);
-    }
-
-    .container-creation .creation .content-do{
-        text-align: center;
-        height: 0;
-        overflow-y: hidden;
-    }
-
-    .showDo{
-        text-align: center;
-        height: auto;
-        overflow-y: visible;
-    }
 }
+
+
+
+   
