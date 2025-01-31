@@ -5,112 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
-    <!--Font Awesome-->
+    <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!--CSS-->
-    <link rel="stylesheet" href="CSS/index.css">
-    <link rel="stylesheet" href="CSS/ux.css">
-    <link rel="stylesheet" href="CSS/responsive.css">
-
-    <!--FONTS-->
+    <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <!-- STYLESHEESH -->
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
 </head>
 <body>
-<!--Header-->
-    <img src="IMG/render3.png" alt=""  claas="img-landing-page" width="1263" height="637" id="HOME">
     <header>
-        <ul>
-            <li class="btn active" id="home-weight"><a href="#HOME">HOME</a></li>
-            <li class="btn"><a href="#About">About</a></li>
-            <li class="btn"><a href="#Resume">Resume</a></li>
-            <li class="btn"><a href="portfolio.html">Portfolio</a></li>
-            <li id="phone-num"><i class="fa-solid fa-phone"></i> +261 34 16 484 56</li>
-        </ul>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSideBar()><a href=""><i class="fa fa-window-close fa-2x" aria-hidden="true"></i></a></li>
+                <li class="btn active"><a href="#hero">Home</a></li>
+                <li class="btn"><a href="#about">About</a></li>
+                <li class="btn"><a href="#resume">Resume</a></li>
+                <li class="btn"><a href="portfolio.html">Portfolio</a></li>
+
+            </ul>
+            <ul>
+                <li id="logo">JodaRak</li>
+                <li class="hideOnMobile"><a href="#hero">Home</a></li>
+                <li class="hideOnMobile"><a href="#about">About</a></li>
+                <li class="hideOnMobile"><a href="#resume">Resume</a></li>
+                <li class="hideOnMobile"><a href="portfolio.html">Portfolio</a></li>
+                <li class="menu-btn" onclick=showSideBar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+        </nav>
     </header>
-<!--Header-->
-<!--Name-->
-    <div class="cont-name active">
-        <div class="container-name" >
+
+    <div class="section hero" id="hero">
+        <div class="content">
             <div class="name">
                 <li id="weight-normal">JODA</li>
                 <li id="weight-bold">RAKOTOMAMONJY</li>
                 <li id="weight-light">3D Artist/Web Developer</li>
             </div>
             <div class="btn-home-page">
-                <button id="btn-resume"><a href="#Resume">Resume</a></button>
+                <button id="btn-resume"><a href="#resume">Resume</a></button>
                 <button id="btn-portfolio"><a href="portfolio.html">Portfolio</a></button>
             </div>
         </div>
     </div>
-   
-<!--Name-->
-    <img src="IMG/about-section-blur.png" alt=""  id="img-about-section">
-<!--About-->
-    <div class="container-about" id="About">
-        <div class="about">
-            <h1>ABOUT</h1>
-            <span>jodarakotomamonjy@gmail.com</span>
-            <p>Welcome! I'm a passionate 3D artist and aspiring web developer with a flair for creativity and storytelling. My journey into the digital arts began with an eagerness to bring ideas to life through 3D modeling, animation, and design. Whether crafting immersive 3D animation or intuitive websites, I strive to create work that is both visually compelling and user-focused.
-    
-            I’m excited to continue learning, growing, and collaborating on projects that push creative boundaries.</p>
-        </div> 
-        <div class="container-contact">
-            <div class="fb">
-                <a href="https://www.linkedin.com/in/joda-a-rakotomamonjy-144389242/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
-            </div>
-            <div class="whatsapp">
-                <a href=""><i class="fab fa-whatsapp fa-2x"></i></a>
-            </div>
-        </div>
-        <div class="place">
-            <p>Madagascar, Antananarivo</p>
+
+    <div class="section about" id="about">
+        <div class="content-about">
+            <div class="about">
+                <h1>ABOUT</h1>
+                <span>jodarakotomamonjy@gmail.com</span>
+                <p>Welcome! I'm a passionate 3D artist and aspiring web developer with a flair for creativity and storytelling. My journey into the digital arts began with an eagerness to bring ideas to life through 3D modeling, animation, and design. Whether crafting immersive 3D animation or intuitive websites, I strive to create work that is both visually compelling and user-focused.
+        
+                I’m excited to continue learning, growing, and collaborating on projects that push creative boundaries.</p>
+
+                <div class="contact">
+                    <div class="fb">
+                        <a href="https://www.linkedin.com/in/joda-a-rakotomamonjy-144389242/">
+                            <i class="fa-brands fa-linkedin fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="whatsapp">
+                        <i class="fab fa-whatsapp fa-2x">
+                            <span>+261 34 16 484 56</span>
+                        </i>
+                    </div>    
+                </div>
+                <div class="location">
+                    <span>Madagascar, Antananarivo</span>
+                </div>
+            </div> 
         </div>
     </div>
-<!--About-->
-    <img src="IMG/img-resume-section.jpg" id="Resume">
-<!--Resumer-->
-    <div class="container-resume" >
-        <div class="container-column" >
-            <div class="container-software">
-                <div class="software-skills ">
-                    <h2 onclick="toggleContent()" id="activebtn-skills">SOFTWARE SKILLS</h2>
-                    <div class="contentSkills" id="contentSkills">
-                        <h4>3D Animation</h4>
+
+    <div class="section resume" id="resume">
+        <div class="content-resume">
+            <div class="software-skills">
+                <h2 onclick="toggleContent()" id="activebtn-skills">SOFTWARE SKILLS</h2>
+                <div class="contentSkills" id="contentSkills">
+                    <h4>3D Animation</h4>
+                    <ul>
+                        <li>Blender</li>
+                        <li>Davinci Resolve</li>
+                        <li>Substance painter</li>
+                    </ul>
+                      
+                    <h4>Web development</h4>
+                    <ul><li>HTML - CS - JS</li></ul>
+                        
+                    <h4>Computer Network</h4>
+                    <ul>
+                        <li>CISCO - pfSense </br>Snort - CrowdSec
+                        </li>
+                    </ul>
+                    <div class="language" >
+                        <h2>LANGUAGES</h2>
                         <ul>
-                            <li>Blender</li>
-                            <li>Davinci Resolve</li>
-                            <li>Substance painter</li>
+                            <li>English</li>
+                            <li>French</li>
+                            <li>Malagasy</li>
                         </ul>
-                          
-                        <h4>Web development</h4>
-                        <ul><li>HTML - CS - JS</li></ul>
-                            
-                        <h4>Computer Network</h4>
+                    </div>
+                    <div class="skills">
+                        <h2>PERSONAL SKILLS</h2>
                         <ul>
-                            <li>CISCO - pfSense </br>Snort - CrowdSec
-                            </li>
+                            <li>Creativity - Team work - Organisation</li>
                         </ul>
-                        <div class="language" >
-                            <h2>LANGUAGES</h2>
-                            <ul>
-                                <li>English</li>
-                                <li>French</li>
-                                <li>Malagasy</li>
-                            </ul>
-                        </div>
-                        <div class="skills">
-                            <h2>PERSONAL SKILLS</h2>
-                            <ul>
-                                <li>Creativity - Team work - Organisation</li>
-                            </ul>
-                        </div>
-                    </div>       
-                </div>
+                    </div>
+                </div>       
             </div>
             <div class="container-experience">
-                <div class="education " >
+                <div class="education">
                     <h2 onclick="toggleContentEdu()" id="activebtn-edu">EDUCATION</h2>
                     <div class="content-edu" id="content-edu">
                         <div class="edu-list">
@@ -181,13 +187,11 @@
                                 </span>
                             </div>
                         </div>
-                    </div>
-                </div>  
+                    </div> 
+                </div>    
             </div>
         </div>
     </div>
-<!--Resumer-->
-
-<script src="JS/index.js"></script>
+    <script src="JS/index.js"></script>
 </body>
 </html>
