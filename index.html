@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- STYLESHEESH -->
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSideBar()><a href=""><i class="fa fa-window-close fa-2x" aria-hidden="true"></i></a></li>
+                <li class="btn active"><a href="#hero">Home</a></li>
+                <li class="btn"><a href="#about">About</a></li>
+                <li class="btn"><a href="#resume">Resume</a></li>
+                <li class="btn"><a href="portfolio.html">Portfolio</a></li>
+
+            </ul>
+            <ul>
+                <li id="logo">JodaRak</li>
+                <li class="hideOnMobile"><a href="#hero">Home</a></li>
+                <li class="hideOnMobile"><a href="#about">About</a></li>
+                <li class="hideOnMobile"><a href="#resume">Resume</a></li>
+                <li class="hideOnMobile"><a href="portfolio.html">Portfolio</a></li>
+                <li class="menu-btn" onclick=showSideBar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="section hero" id="hero">
+        <div class="content">
+            <div class="name">
+                <li id="weight-normal">JODA</li>
+                <li id="weight-bold">RAKOTOMAMONJY</li>
+                <li id="weight-light">3D Artist/Web Developer</li>
+            </div>
+            <div class="btn-home-page">
+                <button id="btn-resume"><a href="#resume">Resume</a></button>
+                <button id="btn-portfolio"><a href="portfolio.html">Portfolio</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="section about" id="about">
+        <div class="content-about">
+            <div class="about">
+                <h1>ABOUT</h1>
+                <span>jodarakotomamonjy@gmail.com</span>
+                <p>Welcome! I'm a passionate 3D artist and aspiring web developer with a flair for creativity and storytelling. My journey into the digital arts began with an eagerness to bring ideas to life through 3D modeling, animation, and design. Whether crafting immersive 3D animation or intuitive websites, I strive to create work that is both visually compelling and user-focused.
+        
+                I’m excited to continue learning, growing, and collaborating on projects that push creative boundaries.</p>
+
+                <div class="contact">
+                    <div class="fb">
+                        <a href="https://www.linkedin.com/in/joda-a-rakotomamonjy-144389242/">
+                            <i class="fa-brands fa-linkedin fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="whatsapp">
+                        <i class="fab fa-whatsapp fa-2x">
+                            <span>+261 34 16 484 56</span>
+                        </i>
+                    </div>    
+                </div>
+                <div class="location">
+                    <span>Madagascar, Antananarivo</span>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="section resume" id="resume">
+        <div class="content-resume">
+            <div class="software-skills">
+                <h2 onclick="toggleContent()" id="activebtn-skills">SOFTWARE SKILLS</h2>
+                <div class="contentSkills" id="contentSkills">
+                    <h4>3D Animation</h4>
+                    <ul>
+                        <li>Blender</li>
+                        <li>Davinci Resolve</li>
+                        <li>Substance painter</li>
+                    </ul>
+                      
+                    <h4>Web development</h4>
+                    <ul><li>HTML - CS - JS</li></ul>
+                        
+                    <h4>Computer Network</h4>
+                    <ul>
+                        <li>CISCO - pfSense </br>Snort - CrowdSec
+                        </li>
+                    </ul>
+                    <div class="language" >
+                        <h2>LANGUAGES</h2>
+                        <ul>
+                            <li>English</li>
+                            <li>French</li>
+                            <li>Malagasy</li>
+                        </ul>
+                    </div>
+                    <div class="skills">
+                        <h2>PERSONAL SKILLS</h2>
+                        <ul>
+                            <li>Creativity - Team work - Organisation</li>
+                        </ul>
+                    </div>
+                </div>       
+            </div>
+            <div class="container-experience">
+                <div class="education">
+                    <h2 onclick="toggleContentEdu()" id="activebtn-edu">EDUCATION</h2>
+                    <div class="content-edu" id="content-edu">
+                        <div class="edu-list">
+                            <div class="high-school">
+                                <div class="square">
+                                    <span>2018</span>
+                                </div>
+                                <div class="high-school-title">
+                                    <h3>Baccalaureat</h3>
+                                    <p>High School Sacre Coeur, Antanimena, Madagascar</p>
+                                </div> 
+                            </div>
+                            <div class="white-bar"></div>
+                            <div class="bachelor-dg">
+                                <div class="square">
+                                    <span>2022</span>
+                                </div>
+                                <div class="bachelor-title">
+                                    <h3>BS in Web Development and Multimedia</h3>
+                                    <p>Institute of Arts and</br> Advanced Technologies (InATA), Madagascar</p>
+                                </div>
+                            </div>
+                            <div class="white-bar"></div>
+                            <div class="master-degree">
+                                <div class="square">
+                                    <span>2024</span>
+                                </div>
+                                <div class="master-title">
+                                    <h3>MS in Cybersecurity</h3>
+                                    <p>E-MEDIA University Madagascar</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="experience">
+                            <h2>EXPERIENCE</h2>
+                            <div class="ptit-loup">
+                                <div class="square">
+                                    <span>2023</span>
+                                </div>
+                                <div class="exp-web">
+                                    <h3>Ptits Loups d'Amour de Madagascar</h3>
+                                    <p>UI/UX Designer</p>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-creation">
+                <div class="creation">
+                    <h2 onclick="toggleContentWhatCanIdo()" id="activebtn-creation">WHAT CAN I DO?</h2>
+                    <div class="content-do" id="content-do">
+                        <span>UI/UX Design - 3D animation</br>Network protection with IDS/IPS </br>Network topology design 
+                        </span>
+                        <div class="container-hobbies">
+                            <h2>HOBBIES & INTERESTS</h2>
+                            <div class="reading-drawing">
+                                <span><i class="fa-solid fa-book"></i>Reading
+                                </span>
+                                <span><i class="fa-solid fa-pencil"></i>Drawing
+                                </span>
+                            </div>
+                            <div class="gaming-3D">
+                                <span><i class="fa-solid fa-gamepad"></i>Gaming
+                                </span>
+                                <span><i class="fa-solid fa-paintbrush"></i>3D Art
+                                </span>
+                            </div>
+                        </div>
+                    </div> 
+                </div>    
+            </div>
+        </div>
+    </div>
+    <script src="JS/index.js"></script>
+</body>
+</html>
