@@ -91,7 +91,7 @@ body{
     .hero{
         width: 100%;
         height: 100vh;
-        background-image: url('/IMG/Hero-image.png')!important;
+        background-image: url('../IMG/Hero-image.png')!important;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -190,7 +190,7 @@ body{
     .about{
         width: 100%;
         height: 100vh;
-        background-image: url('/IMG/Img-about.png')!important;
+        background-image: url('../IMG/Img-about.png')!important;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -250,7 +250,7 @@ body{
     .resume{
         width: 100%;
         height: 100vh;
-        background-image: url('/IMG/Img-resume.jpg')!important;
+        background-image: url('../IMG/Img-resume.jpg')!important;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
