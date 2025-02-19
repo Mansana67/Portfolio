@@ -109,9 +109,13 @@ if (navigator.language.startsWith("fr")) {
     window.location.href = "index_fr.html"; // Redirect French users
 }
 
- var userLang = navigator.language || navigator.userLanguage; 
+   function redirectToFrenchPage() {
+        var userLang = navigator.language || navigator.userLanguage; // Get the browser's language
 
-    // If the language is French (fr)
-    if (userLang.startsWith('fr')) {
-        window.location.href = "https://mansana67.github.io/Portfolio/fr/portfolio_fr.html"; // URL of the French page
+        // If the user's language is French (fr), redirect to the French page
+        if (userLang.startsWith('fr')) {
+            window.location.href = "https://mansana67.github.io/Portfolio/portfolio_fr.html"; // URL of the French page
+        } else {
+            window.location.href = "https://mansana67.github.io/Portfolio/portfolio.html"; // URL of the English page (default)
+        }
     }
