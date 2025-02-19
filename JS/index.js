@@ -109,6 +109,9 @@ if (navigator.language.startsWith("fr")) {
     window.location.href = "index_fr.html"; // Redirect French users
 }
 
- if (navigator.language.startsWith("fr")) {
-        window.location.href = "portfolio_fr.html"; // Redirect French users
+ var userLang = navigator.language || navigator.userLanguage; 
+
+    // If the language is French (fr)
+    if (userLang.startsWith('fr')) {
+        window.location.href = "https://mansana67.github.io/Portfolio/fr/portfolio_fr.html"; // URL of the French page
     }
